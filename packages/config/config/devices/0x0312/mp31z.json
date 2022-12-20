@@ -1,0 +1,47 @@
+{
+	"manufacturer": "Minoston",
+	"manufacturerId": "0x0312",
+	"label": "MP31Z",
+	"description": "Z-Wave Mini Plug",
+	"devices": [
+		{
+			"productType": "0xff00",
+			"productId": "0xff00",
+			"zwaveAllianceId": 4670
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"$import": "~/templates/master_template.json#led_indicator_three_options_inverted"
+		},
+		{
+			"#": "2",
+			"$import": "templates/minoston_template.json#auto_off_timer"
+		},
+		{
+			"#": "4",
+			"$import": "templates/minoston_template.json#auto_on_timer"
+		},
+		{
+			"#": "6",
+			"$import": "~/templates/master_template.json#state_after_power_failure_off_on_prev"
+		},
+		{
+			"#": "7",
+			"$import": "~/templates/master_template.json#led_indicator_brightness"
+		}
+	],
+	"metadata": {
+		"inclusion": "1. Follow the instructions for your Z-Wave certified controller to add a device to the Z-Wave network.\n2. Once the controller is ready to add your device, press the Manual/ Program button on the smart plug 3 times quickly. The blue LED will flash quickly.\nAuto-add mode: LED will flash within 30 seconds after the first plug. Now, you have completed control to turn your fixture ON / OFF according to groups, schedules and interactive automation programmed by your controller. If your Z-Wave certified controller features remote access, you can control your fixture from your mobile devices.\nAgain: If you have issues with pairing / including, please move the device as close as possible to the hub and try again--you can move to your final location when completed.\nNote: If the manual button doesn't light up after pressing 3 times, please reset the device: click the button twice quickly then hold it at least 10 seconds.\nThis operation could be done when manual control is functional--single press can turn on/off the lamp.",
+		"exclusion": "1. Follow the instructions for your Z-Wave certified controller to remove a device from the Z-Wave network.\n2. Once the controller is ready to remove your device, press the manual / program button on the smart plug 3 times quickly.",
+		"reset": "Manual: Click the button twice quickly then hold it at least 10 seconds.\nHost reset: Remove it from hub, the device will be restore to factory default.",
+		"manual": "https://minoston.com/wp-content/uploads/2022/05/MP31ZZW36Mmanual.pdf"
+	}
+}
+
+
